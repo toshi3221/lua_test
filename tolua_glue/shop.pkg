@@ -1,0 +1,3 @@
+$#include "../main.h"
+
+char* callCfunction(int intValue);

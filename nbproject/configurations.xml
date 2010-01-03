@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="ソースファイル" projectFiles="true">
+      <logicalFolder name="tolua_glue" displayName="tolua_glue" projectFiles="true">
+        <itemPath>tolua_glue/shop_glue.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="lib" displayName="tolua_lib" projectFiles="true">
+        <itemPath>../../tolua++-1.0.93/src/lib/tolua_event.c</itemPath>
+        <itemPath>../../tolua++-1.0.93/src/lib/tolua_event.h</itemPath>
+        <itemPath>../../tolua++-1.0.93/src/lib/tolua_is.c</itemPath>
+        <itemPath>../../tolua++-1.0.93/src/lib/tolua_map.c</itemPath>
+        <itemPath>../../tolua++-1.0.93/src/lib/tolua_push.c</itemPath>
+        <itemPath>../../tolua++-1.0.93/src/lib/tolua_to.c</itemPath>
+      </logicalFolder>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles" displayName="ヘッダーファイル" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="リソースファイル" projectFiles="true">
+      <itemPath>test.lua</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles" displayName="重要なファイル" projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>Makefile</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../tolua++-1.0.93/lib</Elem>
+    <Elem>../../tolua++-1.0.93/src/lib</Elem>
+    <Elem>tolua_glue</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>Cygwin|Cygwin</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>../../tolua++-1.0.93/include</pElem>
+            <pElem>C:/Program Files/Lua/5.1/include</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>C:/Program Files/Lua/5.1/include</pElem>
+            <pElem>../../tolua++-1.0.93/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>C:/Program Files/Lua/5.1/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>lua5.1</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>Cygwin|Cygwin</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
